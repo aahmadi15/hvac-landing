@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliance Home Comfort</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="banner" href="#">Book a service call online</a>
+
+        <nav class="navigation" aria-label="Main">
+            <a class="brand" href="#">Reliance <span>Home Comfort</span></a>
+
+            <ul class="list-items" id="nav-links">
+                <li><a href="#heating">Heating</a></li>
+                <li><a href="#cooling">Air Conditioners</a></li>
+                <li><a href="#ventilation">Ventilation</a></li>
+            </ul>
+
+            <a class="nav-cta" href="tel:+10000000000"><i class="fas fa-phone" aria-hidden="true"></i> (000) 000-0000</a>
+
+            <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Featured services">
+            <h1 class="sr-only">Reliance Home Comfort</h1>
+            <div class="hero-layout">
+                <div class="slide-texts">
+                    <div class="my-slide">
+                        <span class="slide-num">01</span>
+                        <span class="eyebrow">Stay cool</span>
+                        <h2>Air Conditioners</h2>
+                        <p>We repair and install brand new air conditioners for clients.</p>
+                        <a class="btn" href="#cooling">Learn more</a>
+                    </div>
+
+                    <div class="my-slide">
+                        <span class="slide-num">02</span>
+                        <span class="eyebrow">Stay warm</span>
+                        <h2>Gas Furnaces</h2>
+                        <p>Furnace repair, replacement and seasonal tune-ups.</p>
+                        <a class="btn" href="#heating">Learn more</a>
+                    </div>
+
+                    <div class="my-slide">
+                        <span class="slide-num">03</span>
+                        <span class="eyebrow">Heat and cool</span>
+                        <h2>Ductless Mini-Split</h2>
+                        <p>Comfort for rooms and additions without new ductwork.</p>
+                        <a class="btn" href="#cooling">Learn more</a>
+                    </div>
+
+                    <div class="my-slide">
+                        <span class="slide-num">04</span>
+                        <span class="eyebrow">Heat and cool</span>
+                        <h2>Heat Pump</h2>
+                        <p>One system that heats in winter and cools in summer.</p>
+                        <a class="btn" href="#heating">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="image-slider">
+                    <div class="image-track">
+                        <div class="slide-image"><img src="./images/air-conditioning.jpg" alt="Outdoor air conditioner unit"></div>
+                        <div class="slide-image"><img src="./images/Gas-Furnace.jpeg" alt="Gas furnace" loading="lazy"></div>
+                        <div class="slide-image"><img src="./images/mini.jpg" alt="Ductless mini-split" loading="lazy"></div>
+                        <div class="slide-image"><img src="./images/heat-pump.avif" alt="Heat pump" loading="lazy"></div>
+                    </div>
+                    <div class="dots" aria-label="Choose a service"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" aria-labelledby="services-title">
+            <div class="section-inner">
+                <p class="kicker">What we do</p>
+                <h2 id="services-title">Comfort for every season</h2>
+
+                <div class="card-grid">
+                    <article class="card" id="heating">
+                        <i class="fas fa-fire-flame-curved card-icon" aria-hidden="true"></i>
+                        <h3>Heating</h3>
+                        <p>Gas furnaces and heat pumps, installed, repaired and tuned up before the cold arrives.</p>
+                        <a href="#">Heating services <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="card" id="cooling">
+                        <i class="fas fa-snowflake card-icon" aria-hidden="true"></i>
+                        <h3>Air Conditioners</h3>
+                        <p>Central air and ductless mini-splits that keep every room cool through the summer.</p>
+                        <a href="#">Cooling services <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="card" id="ventilation">
+                        <i class="fas fa-wind card-icon" aria-hidden="true"></i>
+                        <h3>Ventilation</h3>
+                        <p>Fresh, filtered air moving through your home, with the right airflow in every room.</p>
+                        <a href="#">Ventilation services <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="background bg-ac">
+            <div class="content-wrapper">
+                <h2 class="content-title">Air conditioning</h2>
+                <p>Repairs, replacements and new installs, so your home stays comfortable all summer.</p>
+            </div>
+        </section>
+
+        <section class="process" aria-labelledby="process-title">
+            <div class="section-inner">
+                <p class="kicker">How it works</p>
+                <h2 id="process-title">From call to comfort in three steps</h2>
+
+                <ol class="steps">
+                    <li>
+                        <span class="step-num">1</span>
+                        <h3>Book a visit</h3>
+                        <p>Call us or book online and pick a time that suits you.</p>
+                    </li>
+                    <li>
+                        <span class="step-num">2</span>
+                        <h3>We diagnose</h3>
+                        <p>A technician checks your system and explains your options and pricing.</p>
+                    </li>
+                    <li>
+                        <span class="step-num">3</span>
+                        <h3>We fix it</h3>
+                        <p>Once you approve the work, we repair or install and test everything.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="background bg-furnace">
+            <div class="content-wrapper">
+                <h2 class="content-title">Furnaces</h2>
+                <p>Safe, reliable heat for the cold months, with maintenance to keep it that way.</p>
+            </div>
+        </section>
+
+        <section class="background bg-heatpump">
+            <div class="content-wrapper">
+                <h2 class="content-title">Heat pumps</h2>
+                <p>Efficient year-round heating and cooling from a single system.</p>
+            </div>
+        </section>
+
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <div class="newsletter-inner">
+                <p class="newsletter-kicker">Join Our Community</p>
+                <h2 id="newsletter-title">Subscribe to our Newsletter</h2>
+                <p class="newsletter-sub">Get updated on all relevant news coming from us.</p>
+
+                <form class="newsletter-form" id="newsletter-form" novalidate>
+                    <label class="sr-only" for="newsletter-email">Email address</label>
+                    <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+                    <button type="submit">Subscribe</button>
+
+                    <label class="consent" for="newsletter-consent">
+                        <input id="newsletter-consent" type="checkbox" required>
+                        I agree to receive emails from Reliance Home Comfort and can unsubscribe at any time.
+                    </label>
+                </form>
+                <p class="newsletter-msg" id="newsletter-msg" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="social">
+                <a href="#" aria-label="X"><i class="fab fa-x-twitter fa-2x"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+
+            <div class="contact">
+                <h2 class="lg">Contact us</h2>
+                <p><a href="tel:+10000000000">(000) 000-0000</a></p>
+            </div>
+
+            <div class="hours">
+                <h3>Hours</h3>
+                <ul>
+                    <li>Monday - Friday: 8 AM - 5 PM</li>
+                    <li>Saturday: 9 AM - 1 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Reliance Home Comfort</p>
+    </footer>
+</body>
+</html>
